@@ -25,10 +25,9 @@ def readParameterFile(transactions):
 
     # https://stackoverflow.com/questions/952914/how-to-make-a-flat-list-out-of-list-of-lists
     flattened_tr = list(set([item for sublist in transactions for item in sublist]))
+    print(flattened_tr)
 
     mis = {}
-    # for item in flattened_tr:
-    #     mis[item]
 
     fileData = open(PATH_PARAMETER_FILE, "r+").readlines()
     arrParams = [line.replace(" ", "").rstrip("\n") for line in fileData]

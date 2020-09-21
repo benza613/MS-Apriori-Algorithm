@@ -25,7 +25,7 @@ def readParameterFile(transactions):
 
     # https://stackoverflow.com/questions/952914/how-to-make-a-flat-list-out-of-list-of-lists
     flattened_tr = list(set([item for sublist in transactions for item in sublist]))
-    print(flattened_tr)
+    # print(flattened_tr)
 
     mis = {}
 
@@ -63,6 +63,6 @@ def readParameterFile(transactions):
             except ValueError:
                 raise Exception("Error converting SDC value")
 
-    print(sdc)
-    print(mis)
+    # print(sdc)
+    # print(mis)
     return mis, sdc

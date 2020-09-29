@@ -11,7 +11,7 @@ def readTransactionFile():
 
     # remove all whitespaces, all newline chars, trailing commas that have no input after it
     arrTransact = [line.replace(" ", "").rstrip("\n").rstrip(",") for line in fileData]
-    # print(arrTransact)
+    print(arrTransact)
 
     # map to jagged int array
     transact = [list(map(int, line.split(","))) for line in arrTransact]
